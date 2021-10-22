@@ -1,0 +1,101 @@
+
+body{
+    background: url(wallpaper6.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Iosevka';
+}
+
+.mySlides {
+    display: none;
+}
+.head {
+    margin-top: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+    font-size: 30px;
+    background-color: #6f459e;
+    color: white;
+    border-radius: 19px;
+    font-weight: bolder;
+}
+.data-container {
+    width: 600px;
+    height: 384px;
+    position: relative;
+    margin: 0 auto;
+}
+.bar {
+    border-radius: 5px;
+    width: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #4e54c8;  /* fallback for old browsers */
+    transition: 0.2s all ease;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    z-index: 2;
+    opacity: 100%;
+    overflow: hidden;
+    filter: blur(1px);
+    -webkit-filter: blur(0.5px);
+    left: -48%;
+}
+.bar_id {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.btn1 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-left: 37vw;
+    margin-top: 4vw;
+    margin-right: 1vw;
+}
+.btn2 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+}
+
+.container {
+  width: 75rem;
+  height: 25rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  z-index: 2;
+  background: inherit;
+  overflow: hidden;
+}
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}

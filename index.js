@@ -1,5 +1,7 @@
 const container = document.querySelector(".data-container");
-  
+
+
+
 // function to generate bars
 function generatebars(num = 39) {
       for (let i = 0; i < num; i += 1) {
@@ -68,14 +70,24 @@ async function SelectionSort(delay = 100) {
   document.getElementById("Button2").disabled = false;
   document.getElementById("Button2").style.backgroundColor = "#6f459e";
 }
-  
+
+
+
+
 generatebars();
   
 function generate()
 {
   window.location.reload();
 }
-  
+
+function run(){
+  var select = document.getElementById('algorithm');
+  var value = select.options[select.selectedIndex].value;
+  if(value == "selectionsort"){
+    SelectionSort();
+  }
+}
 
 function disable()
 {

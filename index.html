@@ -7,10 +7,22 @@
     <meta charset="UTF-8" />
     <!-- title -->
     <title>Sorting algorithm visualizer</title>
+    
   </head>
   
   <!-- body -->
   <body >
+    <script language = "JavaScript">
+      var divtext = new Array()
+      divtext[0] = "selectionsort";
+      divtext[1] = "spania";
+      divtext[2] = "portugalia";
+  
+      function getText(selection){
+        txtSelected = selection.selectedIndex;
+        document.getElementsByName('textdiv').innerHTML = divtext[txtSelected];
+      }
+    </script>
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -19,12 +31,25 @@
    <div class="container">
     <section class="data-container"></section> 
    </div>  
+   
    <!-- "Generate New Array" button -->
    <button  class="btn1" onclick="generate()" id="Button1" >Generate New Array</button>   
      
    <!-- "Selection Sort" button -->
-   <button class="btn2" onclick="SelectionSort(),disable()" id="Button2" >Selection Sort</button>
-   
+   <button class="btn2" onclick="run(),disable()" id="Button2" >Selection Sort</button>
+
+
+
+   <select id="algorithm" onchange="getText(this)">
+    <option value="selectionsort" selected>Selection Sort</option>
+    <option value="es">Español</option>
+    <option value="pt">Português</option>
+  </select>
+  <div id="textdiv" style="color:Green; font-family:Calibri; font-size:small; font-weight:bold"> 
+  
+  </div>
+
+  
 </body>
   
   <!-- linking index.js -->
